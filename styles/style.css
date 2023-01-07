@@ -113,11 +113,6 @@ body {
     transform: skew(25deg);
 }
 
-.footer {
-    background-color: rgb(125, 125, 125);
-    width: 100%;
-}
-
 .footer1 {
     background-color: rgb(125, 125, 125);
     width: 100%;
@@ -171,7 +166,7 @@ p {
 li {
     color: rgb(121, 121, 121);
     text-align: center;
-    font-family: "Montserrst", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: italic;
 }
 
@@ -181,14 +176,16 @@ li {
 
 #contact-container {
     display: flex;
+
     gap: 1rem;
 }
 
 #dane {
     width: 50%;
-
 }
-
+.contact-container-list li{
+    text-align: left;
+}
 
 #dane li {
     list-style: none;
@@ -234,7 +231,9 @@ li {
 
 .concerts li:first-of-type p {
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    height: 2.5rem;
+    border-bottom: var(--darkgrey) solid 1px;
 }
 
 .concerts li {
@@ -271,9 +270,22 @@ li {
     width: 100%;
 }
 
-.downloadListContainer h2 {
-    margin-left: 2rem;
+.flexLeftColumn{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.downloadListContainer{
+    margin-top: 4rem;
+}
+
+.downloadListContainer h2 {
+    margin-left: 2.5rem;
+    margin-bottom: 0;
+}
+
 
 .downloadList a {
     display: flex;
@@ -292,7 +304,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0;
+    margin: .5rem 0;
     border: 2px solid black;
     width: 12rem;
     height: 3rem;
